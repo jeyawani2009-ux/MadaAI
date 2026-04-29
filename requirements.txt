@@ -1,1 +1,7 @@
-
+streamlit
+google-generativeai
+openai
+Pillow
+perplexipy
+pandas
+numpy
