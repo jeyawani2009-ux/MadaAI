@@ -1,0 +1,47 @@
+{
+  "name": "VaultDocument",
+  "type": "object",
+  "properties": {
+    "owner_email": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "subject": {
+      "type": "string"
+    },
+    "curriculum": {
+      "type": "string"
+    },
+    "content": {
+      "type": "string"
+    },
+    "file_url": {
+      "type": "string"
+    },
+    "doc_type": {
+      "type": "string",
+      "enum": [
+        "note",
+        "textbook",
+        "past_paper",
+        "syllabus",
+        "lesson_plan"
+      ]
+    },
+    "ai_summary": {
+      "type": "string"
+    },
+    "tags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "title",
+    "subject"
+  ]
+}
