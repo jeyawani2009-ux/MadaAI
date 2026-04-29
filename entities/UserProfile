@@ -1,0 +1,40 @@
+{
+  "name": "UserProfile",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "full_name": {
+      "type": "string"
+    },
+    "emirates_id": {
+      "type": "string"
+    },
+    "role": {
+      "type": "string",
+      "enum": [
+        "student",
+        "teacher",
+        "scholar"
+      ]
+    },
+    "grade": {
+      "type": "string"
+    },
+    "school": {
+      "type": "string"
+    },
+    "curriculum": {
+      "type": "string",
+      "enum": [
+        "CBSE",
+        "IB",
+        "British",
+        "American",
+        "Mixed"
+      ]
+    },
+    "subject_specialization": {
+      "type": "string"
+ 
