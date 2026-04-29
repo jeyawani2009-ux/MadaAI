@@ -1,0 +1,40 @@
+{
+  "name": "StudySession",
+  "type": "object",
+  "properties": {
+    "student_email": {
+      "type": "string"
+    },
+    "subject": {
+      "type": "string"
+    },
+    "topic": {
+      "type": "string"
+    },
+    "curriculum": {
+      "type": "string"
+    },
+    "duration_minutes": {
+      "type": "number"
+    },
+    "score": {
+      "type": "number"
+    },
+    "ai_feedback": {
+      "type": "string"
+    },
+    "session_type": {
+      "type": "string",
+      "enum": [
+        "learning",
+        "smart_mark",
+        "triage",
+        "curiosity"
+      ]
+    }
+  },
+  "required": [
+    "subject",
+    "session_type"
+  ]
+}
