@@ -15,7 +15,7 @@ def mada_brain(user_query, active_tab):
     if "GEMINI_API_KEY" not in st.secrets:
         return "Please set your API Key in Secrets."
     
-    genai.configure(api_key=st.secrets["GEMINI_API_KEY"])
+    genai.configure(api_key=st.secrets["AIzaSyCt9LuZfPbYrqxOpLvycHpu4F5v0GMDBsE"])
     model = genai.GenerativeModel('gemini-1.5-flash')
     
     # Context Injection
