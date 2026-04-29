@@ -1,0 +1,33 @@
+{
+  "name": "ChatMessage",
+  "type": "object",
+  "properties": {
+    "session_id": {
+      "type": "string"
+    },
+    "owner_email": {
+      "type": "string"
+    },
+    "role": {
+      "type": "string",
+      "enum": [
+        "user",
+        "assistant"
+      ]
+    },
+    "content": {
+      "type": "string"
+    },
+    "subject": {
+      "type": "string"
+    },
+    "curriculum": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "session_id",
+    "role",
+    "content"
+  ]
+}
